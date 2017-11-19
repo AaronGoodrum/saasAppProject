@@ -15,3 +15,5 @@ rails s -b $IP -p $PORT
 bundle exec rails server -b $IP -p $PORT
 (The shorthand version of the command is...)
 bundle exec rails s -b $IP -p $PORT
+
+
