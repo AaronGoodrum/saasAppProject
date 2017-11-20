@@ -16,7 +16,14 @@ bundle exec rails server -b $IP -p $PORT
 (The shorthand version of the command is...)
 bundle exec rails s -b $IP -p $PORT
 
+
+##link_to Used ruby prefixes <%= link_to , %>
+<%= link_to "About", about_path %>
+
 ##routes
+use prefixes instead of hard-coding links
+    ###Terminal
+    rails routes
 routes call the controller page >  #name
 
 ##PagesController
