@@ -3,8 +3,6 @@
 [Upskill](http://upskillcourses.com) Software-as-a-Service Ruby on Rails App
 Building a website using ruby on rails
 
-
-
     This command will only work from inside the Rails application directory.
 
 ###Terminal
