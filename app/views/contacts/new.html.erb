@@ -3,28 +3,28 @@
         <h1>Placeholder</h1>
     </div>
     
-    <%= form_for "/contacts" do |f| %>
-      <%= f.label :name %>
-      <%= f.text_field :name %>
-      
-      <%= f.label :email %>
-      <%= f.text_field :email %>
-      
-      <%= f.label :comments %>
-      <%= f.text_area :comments %>
-      
-      <%= f.submit 'Submit' %>
-    <% end %>
-  <form>
-     <div class="form-group">
-    <label>Name</label>
-    <input type="text">
-      
-    <label>Email</label>
-    <input type="text">
-      
-    <label>Comments</label>
-    <input type="text">
+  <div>
+    <div class="row">
+      <h3 class="text-center">Contact Us</h3>
+      <div class="col-6 col-md-6 col-lg-8">
+        <div class="well">
+          <%= form_for "/contacts" do |f| %>
+            <div class="form-group">
+              <%= f.label :name %>
+              <%= f.text_field :name, class: 'form-control' %>
+            </div>
+            <div class="form-group">
+              <%= f.label :email %>
+              <%= f.text_field :email, class: 'form-control' %>
+            </div>
+            <div class="form-group">
+              <%= f.label :comments %>
+              <%= f.text_area :comments, class: 'form-control' %>
+            </div>
+            <%= f.submit 'Submit', class: 'btn btn-default' %>
+          <% end %>
+        </div>
+      </div>
     </div>
-  </form>
+  </div>
 </div>
