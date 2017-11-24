@@ -7,16 +7,20 @@ Building a website using ruby on rails
 
 ###Terminal
 
-cd workspace
-rails s -b $IP -p $PORT
+    cd workspace
+    rails s -b $IP -p $PORT
+    
+    git add .
+    git commit -m "####"
+    git push origin ####
 
-bundle exec rails server -b $IP -p $PORT
+    bundle exec rails server -b $IP -p $PORT
 (The shorthand version of the command is...)
-bundle exec rails s -b $IP -p $PORT
+    bundle exec rails s -b $IP -p $PORT
 
 
 ##link_to Used ruby prefixes <%= link_to , %>
-<%= link_to "About", about_path %>
+    <%= link_to "About", about_path %>
 
 ##routes
 use prefixes instead of hard-coding links

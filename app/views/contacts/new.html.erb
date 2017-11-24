@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="text-center container-fluid">
+        <h1>Placeholder</h1>
+    </div>
+    
+    <%= form_for "/contacts" do |f| %>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+      
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+      
+      <%= f.label :comments %>
+      <%= f.text_area :comments %>
+      
+      <%= f.submit 'Submit' %>
+    <% end %>
+  <form>
+     <div class="form-group">
+    <label>Name</label>
+    <input type="text">
+      
+    <label>Email</label>
+    <input type="text">
+      
+    <label>Comments</label>
+    <input type="text">
+    </div>
+  </form>
+</div>
