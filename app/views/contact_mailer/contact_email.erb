@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+    <body>
+<!--      We need an actual HTML email template to send when our contact form is submitted.-->
+<!--The way we do this in Rails is by creating a corresponding HTML view for the contact_email function that we wrote earlier.-->
+      <p>You have received a message from the site's contact form, from
+      <%= "#{ @name }, #{ @email }." %></p>
+      <p><%= @body %></p>
+    </body>
+</html>
