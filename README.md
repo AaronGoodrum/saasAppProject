@@ -64,5 +64,17 @@ Another, more direct workflow is to use Git's reset feature.
 The following command will reset your current branch to whichever branch you specify after the "/". You can put any other branch name in there, but in this example, your code would end up matching whatever was most recently pushed to the master branch:
 
     git reset --hard origin/master
+    
+## Git Master and Heroku
 
-
+    git checkout master
+    git branch
+    git merge contact_form
+    git push origin master
+    
+## We need to merge our code from the contact_form branch into our master branch first.    
+    git push heroku master
+    heroku run rails db:migrate
+## /saasapp/db/schema.rb
+## If any Change happen to the schema for the contact_form need to update the heroku db
+    heroku run rails db:migrate
