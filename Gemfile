@@ -25,7 +25,7 @@ gem 'jbuilder', '2.5.0'
 # gem 'capistrano-rails', group: :development
 
 # Use bootstrap library for front-end UI and layout
-gem 'bootstrap', '~> 4.0.0.beta2.1'
+gem 'bootstrap-sass', '3.3.7'
 
 #Use Font Awesome sass gem for adding icons
 gem 'font-awesome-sass', '4.6.2'
