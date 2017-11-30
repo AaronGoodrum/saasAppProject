@@ -46,6 +46,9 @@
   </nav>
   <div class="container">
   <% flash.each do |type, msg| %>
+  <% if type === 'alert' %>
+    <% type = 'danger' %>
+  <% end %>
     <%= content_tag :div, msg, class: "alert alert-#{type}", role:"alert" %>
   <% end %>
   </div>

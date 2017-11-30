@@ -1,0 +1,7 @@
+Paseudocode
+
+Memberships
+  * User should see link for picking Plans on home page
+  * Basic plan link should point to regular devise sigh up form
+  * Paying Plans should link / point to a custom sign up form
+    ** New view needed for paying Plans
