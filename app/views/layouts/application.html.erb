@@ -28,9 +28,14 @@
       </div>
       <div class="collapse navbar-collapse" id="main-nav-collapse">
         <div class="nav navbar-nav navbar-right">
+<!--conditionally display one set of buttons over another, depending on whether the user is logged in or not.-->
+          <% if user_signed_in? %>
+            <%= link_to "Log Out", destroy_user_session_path, method: :delete, class: "btn btn-default navbar-btn" %>
+          <% else %>
 <!--routes to devise/sessions log-in and sign-up-->
           <%= link_to "Log In", new_user_session_path, class:'btn btn-primary btn-lg navbar-btn' %>
           <%= link_to "Sign Up", new_user_registration_path, class:'btn btn-success btn-lg navbar-btn' %>
+          <% end %>
         </div>
         <ul class="nav navbar-nav navbar-right">
           <li><%= link_to "About", about_path %></li>
