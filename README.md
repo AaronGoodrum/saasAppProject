@@ -33,6 +33,12 @@ controller use the #name from routes to run (def #name) to look for the app view
 
 ##app>views>pages
 
+## only to clean up db and start clean bd files
+    rails db:drop
+    rails db:migrate
+
+##db/seeds.rb 
+    database table to store membership plan offerings.
 
 ##Git notes
 
