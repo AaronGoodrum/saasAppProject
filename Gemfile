@@ -37,6 +37,7 @@ gem 'hirb', '0.7.3'
 gem 'devise', '4.2.0'
 
 # Use Stripe MOCK for payment processing
+# gem 'stripe', '1.48.0'
 gem 'stripe-ruby-mock', '~> 2.5.0', :require => 'stripe_mock'
 
 group :development, :test do
